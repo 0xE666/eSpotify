@@ -18,7 +18,12 @@ class spotifyController:
         self.s.previous_track()
     
     def changeVolume(self, percent):
-        self.s.volume(percent)
+        if int(percent) > 100:
+            pass
+        if int(percent) < 0:
+            pass
+        else:
+            self.s.volume(percent)
 
     def pause(self):
         if self.paused != True:
