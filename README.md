@@ -1,5 +1,5 @@
 # control-spotify-with-game-controller
-ability to control spotify functions like pause, next song, volume with ps4 ( possibly xbox?) controller so you no longer have to tab out of games
+ability to control spotify functions like pause, next song, volume with ps4 ( possibly xbox?) controller so you no longer have to tab out of games, feel free to make issues with ideas or fork and improve :)
 
 create app in developer portal
 https://developer.spotify.com/dashboard/applications
