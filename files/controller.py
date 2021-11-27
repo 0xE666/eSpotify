@@ -55,20 +55,31 @@ class controllerMonitor:
             pygame.init()
             for event in pygame.event.get():
                 if event.type == pygame.JOYBUTTONDOWN:
-                    if event.button == self.volumeUp:
-                        if self.volumeUpBool:
-                            self.volume += 5
-                            self.s.changeVolume(self.volume)
-                    if event.button == self.volumeDown:
-                        if self.volumeDownBool:
-                            self.volume -= 5
-                            self.s.changeVolume(self.volume)
-                    if event.button == self.prevSong:
-                        if self.prevSongBool:
-                            self.s.previousTrack()
-                    if event.button == self.nextSong:
-                        if self.nextSongBool:
-                            self.s.nextTrack()
-                    if event.button == self.pause:
-                        if self.pauseBool:
-                            self.s.pause()
+                    try:
+                        if event.button == self.volumeUp:
+                            if self.volumeUpBool:
+                                if self.volume >= 100:
+                                    pass
+                                if self.volume <= 0:
+                                    pass
+                                self.volume += 5
+                                self.s.changeVolume(self.volume)
+                        if event.button == self.volumeDown:
+                            if self.volumeDownBool:
+                                if self.volume >= 100:
+                                    pass
+                                if self.volume <= 0:
+                                    pass
+                                self.volume -= 5
+                                self.s.changeVolume(self.volume)
+                        if event.button == self.prevSong:
+                            if self.prevSongBool:
+                                self.s.previousTrack()
+                        if event.button == self.nextSong:
+                            if self.nextSongBool:
+                                self.s.nextTrack()
+                        if event.button == self.pause:
+                            if self.pauseBool:
+                                self.s.pause()
+                    except:
+                        pass
