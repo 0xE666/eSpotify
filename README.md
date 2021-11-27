@@ -16,4 +16,6 @@ edit config as wanted and run the first time ran it should open the redirect ui 
 [controller key codes](https://raw.githubusercontent.com/hdhdhfhfirjf/control-spotify-with-game-controller/main/files/controllerKeys.json)
 
 To do:
-monitor the launch and close of a specific application
+
+ 1. monitor the launch and close of a specific application
+
