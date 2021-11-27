@@ -60,16 +60,20 @@ class controllerMonitor:
                             if self.volumeUpBool:
                                 if self.volume >= 100:
                                     pass
+                                    return
                                 if self.volume <= 0:
                                     pass
+                                    return
                                 self.volume += 5
                                 self.s.changeVolume(self.volume)
                         if event.button == self.volumeDown:
                             if self.volumeDownBool:
-                                if self.volume >= 100:
+                                if self.volume > 100:
                                     pass
-                                if self.volume <= 0:
+                                    return
+                                if self.volume < 0:
                                     pass
+                                    return
                                 self.volume -= 5
                                 self.s.changeVolume(self.volume)
                         if event.button == self.prevSong:
