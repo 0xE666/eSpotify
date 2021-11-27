@@ -3,8 +3,8 @@
     "beepOnActivation": true,
     "firstTimeRun": true,
     "spotifyCreds": {
-        "spotifyClientId": "e9d737e55a0c46128fabde24ec61fea5",
-        "spotifyClientSecret": "de1d4468f6004ee0812252c6b2d6a444"
+        "spotifyClientId": "",
+        "spotifyClientSecret": ""
     },
     "controlBools": {
         "nextSong": true,
